@@ -13,5 +13,250 @@
 <!-- body表示内容，网页的正文都在这里 -->
 <body>
     hello,world!
+    <!-- 标题标签独占一行，h1-h6依次变小 -->
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+    <!-- 段落标签 p ,两个p之间自动会隔行 -->
+    <p>专家解释，中国的农历规定大月30天，小月29天，
+        一年12个月共354或355天，比一个回归年的天数少11天左右，4年下来，就少了1个多月。久之，就会出现时序和天时错乱的怪现象。</p>
+    <p>为了解决这个问题，便采用增加“闰月”的办法。今年闰月出现在6月，不仅七夕节推迟，中秋节也跟着错后，加之农历中秋节一般出现在阳历9月7日至10月6日之间，从而出现了中秋逢国庆的历法现象。</p>
+   <!-- br单标签，换行标签，后面的内容另起一行 -->
+    一年12个月共354或355天，<br/>比一个回归年的天数少11天左右，4年下来，就少了1个多月</br>
+    <br>
+    <br>语义标签
+    <br>
+    <br>
+    <!-- 加粗 -->
+    <strong>加粗1</strong><br>
+    <b>加粗2</b><br>
+    <!-- 倾斜 -->
+    <em>倾斜1</em><br>
+    <i>倾斜2</i><br>
+    <!-- 删除线 -->
+    <del>删除1</del><br>
+    <s>删除2</s><br>
+    <!-- 下划线 -->
+    <ins>下划线1</ins><br>
+    <u>下划线2</u><br>  
+     <br>
+     <br>
+     <!-- div标签-->
+     <div>我的div</div>
+     <!-- span标签 -->
+     <span>我是span</span>
+     <span>我是span</span><br>
+
+    <!-- 图片标签 -->
+    <img src="pic/img.jpg" alt="显示失败" title="鼠标放上去就显示"  width="100px" height="100px" border="1px"/>
+    <!-- 链接标签 -->
+    <a href="http://www.baidu.com" target="_self">在本页面打开</a>
+    <a href="http://www.baidu.com" target="_blank">在新页面打开</a>
+    <a href="#two">第二集信息</a>
+    <div id="two">第二集介绍</div>
+    <h2>表格说明</h2>
+    <table align="center" border="1px" cellspacing="0px" cellpadding="0px">
+        <!-- thead表格表头 -->
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键字</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近7日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <!-- tbody表格表体 -->
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td>趋势</td>
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a>
+                    <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>盗墓笔记</td>
+                <td>趋势</td>
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a>
+                    <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>西游记</td>
+                <td>趋势</td>
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a>
+                    <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>4</td>
+                <td>东游记</td>
+                <td>趋势</td>
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a>
+                    <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>5</td>
+                <td>南游记</td>
+                <td>趋势</td>
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a>
+                    <a href="#">百科</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>合并单元格</h2>
+    <table border="1px" align="center" cellspacing="0px" cellpadding="0px">
+        <thead>
+            <tr>
+                <th  colspan="5">个人简历</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>姓名：</td>
+                <td></td>
+                <td>性别：</td>
+                <td></td>
+                <td rowspan="3">照片</td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td></td>
+                <td>性别：</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td></td>
+                <td>性别：</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- 无序列表 -->
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+    <!-- 有序列表 -->
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ol>
+    <!-- 自定义列表 -->
+    <dl>
+        <dt>名词1</dt>
+        <dd>描述1</dd>
+        <dd>描述2</dd>
+    </dl>
+    <h2>表单</h2>
+    <!-- 综合练习 -->
+    <h4>青春不常在，抓紧谈恋爱</h4>
+    <form action="#" method="POST" action="center">
+        <table>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="sex" checked>男
+                    <input type="radio" name="sex">女
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select type="text" name="birthday">
+                        <option>--请选择年--</option>
+                    </select>
+                    <select type="text" name="birthday">
+                        <option>--请选择月--</option>
+                    </select>
+                    <select type="text" name="birthday">
+                        <option>--请选择日--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <input type="radio" name="ismaary" checked>未婚
+                    <input type="radio" name="ismaary" >已婚
+                    <input type="radio" name="ismaary" >离婚
+                </td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>
+                    <input type="text" name="education">
+                </td>
+            </tr>
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="checkbox" name="like">妩媚的
+                    <input type="checkbox" name="like">可爱的
+                    <input type="checkbox" name="like">小鲜肉
+                    <input type="checkbox" name="like">老腊肉
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea name="myself"></textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="免费注册"><br>
+        <input type="checkbox">我同意注册条款和会员加入标准<br>
+        <a href="#">我是会员，立即登录</a>
+    </form>
+    <dl>
+        <dt>我承诺</dt>
+        <dd>年满18岁，单身</dd>
+        <dd>抱着严肃的态度</dd>
+        <dd>真诚寻找另一半</dd>
+    </dl>
+
 </body>
 </html>
