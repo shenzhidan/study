@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        /* 标签选择器 */
+        h1{
+            color:red;
+        }
+        /* 类选择器 */
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        /* id选择器 */
+        #yellow{
+            color:yellow;
+        }
+        /* 字体系列 */
+        #family1{
+            font-family: "仿宋";
+        }
+        #family2{
+            font-family:  Arial,"Microsoft Yahei", "微软雅黑";
+        }
+        /* 字体大小 */
+        .size{
+            font-size: 28px;
+        }
+        /* 字体粗细 */
+        .weight{
+            font-weight:800;
+        }
+        /* 文字样式 */
+        i{
+            font-style: normal;
+        }
+        /* 文字综合属性 */
+        #all{
+            /* font-style: italic;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: "微软雅黑"; */
+            /* 综合写法 */
+            font:italic 700 30px "微软雅黑"
+        }
+        /* 文本水平对齐 */
+        #div{
+            text-align: center;
+        }
+        /* 文本装饰 */
+        #a{
+          text-decoration: underline;
+        }
+        #b{
+           text-decoration: overline;
+        }
+        #c{
+           text-decoration: line-through;
+        }
+        /* 文本缩进 */
+        #aa{
+            text-indent: 10px;
+        }
+        #bb{
+            text-indent: 2em;
+        }
+        /* 行间距 */
+        #cc{
+            line-height:26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>红色</h1>
+    <div class="red">红色</div>
+    <div class="blue">蓝色</div>
+    <div class="red">红色</div>
+    <span id="yellow">黄色</span>
+    <h2>字体演示</h2>
+    <span id="family1">字体系列1</span>
+    <span id="family2">字体系列2</span>
+    <p class="size">字体大小</p>
+    <p class="weight">字体粗细</p>
+    <i>斜体</i>
+    <br>
+    <span id="all">综合属性</span>
+    <div id="div">
+        文字水平对齐
+    </div>
+    <p id="a">下划线</p>
+    <p id="b">上划线</p>
+    <p id="c">删除选</p>
+    <br>
+    <br>
+    <br>
+    <div id="aa" >首行缩进1</div>
+    <div id="bb">首行缩进2</div>
+    <br>
+    <br>
+    <br>
+    <div id="cc">CHINA</div>
+</body>
+</html>
