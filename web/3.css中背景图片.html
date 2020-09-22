@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        div{
+            /* 默认情况下背景是平铺的 */
+            width: 300px;
+            height: 300px;
+            background-image: url(pic/logo.png);
+            /* 背景不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 背景x轴平铺 */
+            background-repeat: repeat-x;
+              /* 背景y轴平铺 */
+            background-repeat: repeat-y;
+        }
+        #position1{
+            width: 300px;
+            height: 300px;
+            background-image: url(pic/logo.png);
+            background-repeat: no-repeat;
+            background-color: pink;
+            /* 方位名词，上边居中 */
+            /* background-position: top center; */
+            /* 右侧居中，所以是垂直居中靠右 */
+            /* background-position: right center; */
+            /* center center 中心位置 */
+            background-position: center center ;
+        }
+        #pic{
+            font-weight: 400;
+            width: 140px;
+            height: 40px;
+            /* background-color: pink; */
+            line-height: 40px;
+            /* background-image: url(pic/icon.png); */
+            /* background-repeat: no-repeat;
+            background-position: 10px center; */
+            padding-left: 2em;
+            /* 背景颜色半透明 */
+            background:rgba(0,0,0,0.3) url(pic/icon.png) no-repeat 10px center;
+        }
+        body{
+            background-image: url(pic/bg2.jpg);
+            background-position: center 40px;
+            background-attachment:scroll;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <br>
+    <br>
+    <h2>背景图定位示例</h2>
+    <br>
+    <div id="position1"></div>
+    <h2>定位例子</h2>
+    <h4 id="pic">成长守护平台</h4>
+</body>
+</html>
