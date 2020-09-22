@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+   <style>
+       /* 边框 */
+     .div{
+         height: 200px;
+         width: 200px;
+         border: blue solid 1px;
+         border-top: red solid 1px;
+     }
+     /* padding内边距 */
+     .div1{
+         padding: 5px 10px;
+         width: 200px;
+     }
+     /* margin让块级元素水平居中 */
+     .div2{
+        /* 设置宽度 */
+         width: 500px;
+         border: red solid 1px;
+         /* 左右边距auto */
+         margin: 0 auto;
+     }
+     /* 外边距合并 */
+     .a{
+         border: tan solid 1px;
+         margin-bottom: 20px;
+         width: 200px;
+         height: 200px;
+     }
+     .b{
+         width: 200px;
+         height: 200px;
+         border: steelblue solid 1px;
+         margin-top: 25px;
+     }
+    
+     /* 圆角 */
+     .c{
+         width: 200px;
+         height: 200px;
+         border: burlywood solid 1px;
+         border-radius: 10px 50% 20px 50%;
+     }
+     /* 盒子阴影 */
+     .textShadow{
+        width: 200px;
+         height: 200px;
+         border: steelblue solid 1px;
+         box-shadow: 10px 10px 5px 5px cadetblue;
+     }
+     /* 文字阴影 */
+     span {
+         text-shadow: 10px 10px 20px chartreuse;
+     }
+   </style>
+<body>
+    <div class="div"></div>
+    <div class="div1">测试内边距</div>
+    <div class="div2">水平居中</div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="textShadow">盒子阴影</div>
+    <span>文字阴影</span>
+</body>
+</html>
