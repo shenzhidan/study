@@ -25,20 +25,6 @@
          /* 左右边距auto */
          margin: 0 auto;
      }
-     /* 外边距合并 */
-     .a{
-         border: tan solid 1px;
-         margin-bottom: 20px;
-         width: 200px;
-         height: 200px;
-     }
-     .b{
-         width: 200px;
-         height: 200px;
-         border: steelblue solid 1px;
-         margin-top: 25px;
-     }
-    
      /* 圆角 */
      .c{
          width: 200px;
@@ -57,13 +43,44 @@
      span {
          text-shadow: 10px 10px 20px chartreuse;
      }
+     table{
+        border: pink solid 1px;
+        border-collapse: collapse;
+       
+     }
+     tr th,td{
+         border: pink solid 1px;
+         /* border-collapse: collapse; */
+         text-align: center;
+     }
+    
    </style>
 <body>
     <div class="div"></div>
     <div class="div1">测试内边距</div>
     <div class="div2">水平居中</div>
-    <div class="a"></div>
-    <div class="b"></div>
+    <table >
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>12</td>
+        </tr>
+    </table>
     <div class="c"></div>
     <div class="textShadow">盒子阴影</div>
     <span>文字阴影</span>
