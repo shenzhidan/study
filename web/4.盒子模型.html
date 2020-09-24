@@ -53,7 +53,51 @@
          /* border-collapse: collapse; */
          text-align: center;
      }
-    
+    #test1{
+        width: 300px;
+        height: 300px;
+        background-color:pink;
+        /* 原本高宽为300px,加了padding后，盒子的实际占340*340px */
+        padding:20px;
+    }
+    #nav{
+        height: 41px;
+        background-color: #fcfcfc;
+        border-top: 3px solid  #ff8500 ;
+        border-bottom:1px solid #edeef0  ;
+        line-height: 41px;
+    }
+    #nav a{
+     display: inline-block;
+     color: #4c4c4c;
+     text-decoration: none;
+     padding: 0 20px;
+     font-size: 12px;
+     
+   }
+   #nav a:hover{
+       background-color: #eee;
+    color: salmon;
+   }
+   /* 外边距塌陷  */
+   #test2{
+       width: 300px;
+       height: 300px;
+       background-color: salmon;
+       margin-top:20px;
+       /* 外边距塌陷解决1 */
+       /* border: 1px solid transparent; */
+       /* 外边距塌陷解决2 */
+       /* overflow: hidden; */
+       /* 外边距塌陷解决3 */
+       padding-top: 1px;
+   }
+   #test2 div{
+       width: 100px;
+       height: 100px;
+       margin-top: 100px;
+       background-color: red;
+   }
    </style>
 <body>
     <div class="div"></div>
@@ -84,5 +128,16 @@
     <div class="c"></div>
     <div class="textShadow">盒子阴影</div>
     <span>文字阴影</span>
+    <div id="test1">padding会撑大盒子padding会撑大盒子padding会撑大盒子padding会撑大盒子padding会撑大盒子</div>
+    <div id="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">啦啦啦</a>
+        <a href="#">微博</a>
+    </div>
+    <div id=test2>
+        <div></div>
+    </div>
 </body>
 </html>
