@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .soso{
+           /* 传统布局 */
+           width: 100px;
+           height: 100px;
+           background-color: red;
+           border:1px solid black;
+           /* 转换成行元素，元素元素间有无法控制的空隙 */
+           display: inline-block;
+       }
+       /* 浮动 */
+       .f1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+       }
+       .f2{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        float:left
+        }
+        .f3{
+         width: 100px;
+         height: 100px;
+         background-color:yellow;
+         float: left;
+        }
+        .size{
+            /* 浮动特性1，块级元素的大小靠内容撑 */
+            background-color: blue;
+            float: left;
+        }
+        .box{
+            widows: 500px;
+            height: 200px;
+            border: black solid 1px;
+        }
+        .child1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+        .child2{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+        }
+        .child3{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 传统布局，块级元素纵向排列-->
+    <div class="soso"></div>
+    <div class="soso"></div>
+    <div class="soso"></div>
+    <!-- 浮动布局 -->
+    <div class="f1">f1</div>
+    <div class="f2">f2</div>
+    <div class="f3">f3</div>
+    <!-- 浮动特性1 添加浮动后，大小根据内容决定 -->
+    <div class="size">内容</div>
+    <span class="size">内容</span>
+    <div class="box">
+        <span class="child1"></span>
+        <span class="child2"></span>
+        <span class="child2"></span>
+    </div>
 </body>
 </html>
