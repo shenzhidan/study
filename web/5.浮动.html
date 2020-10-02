@@ -61,6 +61,113 @@
             height: 150px;
             background-color: blue;
         }
+        .home .laoda{
+            width: 100px;
+            height:100px;
+            background-color: pink;
+        }
+        .home .laoer{
+            width: 100px;
+            height:100px;
+            background-color: blue;
+            /* 浮动元素对之前的普通流无影响，对后面的有影响，因为浮动元素脱离了普通标准流,
+             飘起来了，之后的元素占有了浮动前的位置
+            */
+            float: left;
+        }
+        .home .laosan{
+            width: 160px;
+            height:100px;
+            background-color: red;
+        }
+        /* 清除浮动 */
+        .home1{ 
+            border: black solid 1px;
+        }
+        .home1 .laoda1{
+            width: 100px;
+            height:100px;
+            background-color: pink;
+            float: left;
+        }
+        .home1 .laoda2{
+            width: 100px;
+            height:100px;
+            background-color: blue;
+            float: left;
+       }
+       .clear{
+           clear: both;
+       }
+       /* 清除浮动2 */
+       .home2{ 
+            border: black solid 1px;
+            overflow: hidden;
+        }
+       .home2 .laoda2{
+            width: 100px;
+            height:100px;
+            background-color: pink;
+           float: left;
+        }
+        .home2 .laoer2{
+            width: 100px;
+            height:100px;
+            background-color: blue;
+            float: left;
+       }
+       /* 清除浮动3 */
+       .clearfix:after{
+           content: "";
+           display: block;
+           height: 0;
+           clear: both;
+           visibility:hidden;
+       }
+       .clearfix{
+           *zoom: 1;
+       }
+       .home3{ 
+            border: black solid 1px;
+        }
+       .home3 .laoda3{
+            width: 100px;
+            height:100px;
+            background-color: pink;
+           float: left;
+        }
+        .home3 .laoer3{
+            width: 100px;
+            height:100px;
+            background-color: blue;
+            float: left;
+       }
+       /* 清除浮动4 */
+       .clearfix1:before,.clearfix1:after{
+           content: "";
+           display: table;
+       }
+       .clearfix1::after{
+           clear: both;
+       }
+       .clearfix1{
+           *zoom: 1;
+       }
+       .home4{ 
+            border: black solid 1px;
+        }
+       .home4 .laoda4{
+            width: 100px;
+            height:100px;
+            background-color: pink;
+           float: left;
+        }
+        .home4 .laoer4{
+            width: 100px;
+            height:100px;
+            background-color: blue;
+            float: left;
+       }
     </style>
 </head>
 <body>
@@ -79,6 +186,37 @@
         <span class="child1"></span>
         <span class="child2"></span>
         <span class="child2"></span>
+    </div>
+    <!-- 浮动的不同组合 -->
+    <div class="home">
+        <div class="laoda">老大</div>
+        <div class="laoer">老二</div>
+        <div class="laosan">老三</div>
+    </div>
+    <br>
+      <!-- 清除浮动 1 加空块级元素-->
+    <div class="home1">
+        <div class="laoda1">老大</div>
+        <div class="laoda2">老二</div>
+        <div class="clear"></div>
+    </div>
+    <br>
+    <!-- 清除浮动2 父亲添加overflow -->
+    <div class="home2">
+        <div class="laoda2">老大</div>
+        <div class="laoer2">老二</div>
+    </div>
+     <br>
+     <!-- 清除浮动3 伪元素 -->
+     <div class="home3 clearfix">
+        <div class="laoda3">老大</div>
+        <div class="laoer3">老二</div>
+    </div>
+    <br>
+    <!-- 清除浮动4  双伪元素-->
+    <div class="home4 clearfix1">
+        <div class="laoda4">老大</div>
+        <div class="laoer4">老二</div>
     </div>
 </body>
 </html>
